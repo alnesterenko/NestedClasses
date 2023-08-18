@@ -2,6 +2,7 @@ package practic.nested.classes;
 
 import java.util.Calendar;
 
+// Основной класс вокруг которого всё вертится
 public class Group {
     public String GroupId;
     public Calendar[] sessions;

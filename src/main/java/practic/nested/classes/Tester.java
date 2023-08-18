@@ -2,6 +2,7 @@ package practic.nested.classes;
 
 import java.util.Calendar;
 
+// Этот класс только для тестирования
 public class Tester {
     public static void main(String[] args) {
         String[] names = {"John", "Maria", "Jeorge"};

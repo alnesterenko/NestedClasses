@@ -1,5 +1,6 @@
 package practic.nested.classes;
 
+// Класс для подсчёта статистики
 public class Stats {
     private Group aGroup;
 
