@@ -25,6 +25,30 @@ public class Group {
     }
 
     public void printReport() {
+        // LOCAL CLASS
+        class Stats {
+
+            public double avgMark() {
+                double result = 0.0;
+                for (int r = 0; r < students.length; r++) {
+                    for (int c = 0; c < sessions.length; c++) {
+                        result += marks[r][c];
+                    }
+                }
+                return result / (students.length * sessions.length);
+            }
+
+            public String bestStudent() {
+                // analysis
+                return "";
+            }
+
+            public String[] studentsAtRisk() {
+                // analysis
+                return null;
+            }
+        }
+        // LOCAL CLASS
         System.out.print("          "); // 10 chars for a names
         for (int c = 0; c < sessions.length; c++) { // print dates
             System.out.printf("%02d/%02d/%4d ",
@@ -41,30 +65,7 @@ public class Group {
             }
             System.out.println();
         }
+        Stats sts = new Stats();
+        System.out.println("Average mark: " + sts.avgMark());
     }
-
-    // INNER MEMBER CLASS
-    public class Stats {
-
-        public double avgMark() {
-            double result = 0.0;
-            for (int r = 0; r < students.length; r++) {
-                for (int c = 0; c < sessions.length; c++) {
-                    result += marks[r][c];
-                }
-            }
-            return result / (students.length * sessions.length);
-        }
-
-        public String bestStudent() {
-            // analysis
-            return "";
-        }
-
-        public String[] studentsAtRisk() {
-            // analysis
-            return null;
-        }
-    }
-    // INNER MEMBER CLASS
 }

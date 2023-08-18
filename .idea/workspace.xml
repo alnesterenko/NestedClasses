@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f9c23da-39cb-4730-b37d-f9de62ec76b6" name="Changes" comment="Using static nested class">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="1f9c23da-39cb-4730-b37d-f9de62ec76b6" name="Changes" comment="Using inner member class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/practic/nested/classes/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practic/nested/classes/Group.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/practic/nested/classes/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practic/nested/classes/Tester.java" afterDir="false" />
@@ -24,6 +23,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f7b5154b-2d06-4461-803d-c10ea99a27b7" />
+        <option name="url" value="git@github.com:alnesterenko/NestedClasses.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -106,13 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692339546944</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Using inner member class">
+      <created>1692340739761</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692340739761</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start of neted classes" />
     <MESSAGE value="Start of nested classes" />
     <MESSAGE value="Using static nested class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using static nested class" />
+    <MESSAGE value="Using inner member class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using inner member class" />
   </component>
 </project>

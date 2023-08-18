@@ -13,7 +13,9 @@ target/
 *.ipr
 
 .idea
+*.idea
 *.iml
+*.xml
 
 target
 out
