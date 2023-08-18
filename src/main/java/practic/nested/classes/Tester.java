@@ -15,7 +15,7 @@ public class Tester {
         grp.marks[0][0] = grp.marks[0][1] = 90.0;
         grp.marks[1][0] = grp.marks[1][1] = 85.0;
         grp.marks[2][0] = grp.marks[2][1] = 80.0;
-        Group.Stats sts = new Group.Stats(grp);
+        Group.Stats sts = grp.new Stats();
         grp.printReport();
         System.out.println("Average mark: " + sts.avgMark());
     }

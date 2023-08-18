@@ -43,22 +43,17 @@ public class Group {
         }
     }
 
-    // Внутренний статический класс для подсчёта статистики
-    public static class Stats {
-        private Group aGroup;
-
-        public Stats(Group grp) {
-            aGroup = grp;
-        }
+    // INNER MEMBER CLASS
+    public class Stats {
 
         public double avgMark() {
             double result = 0.0;
-            for (int r = 0; r < aGroup.students.length; r++) {
-                for (int c = 0; c < aGroup.sessions.length; c++) {
-                    result += aGroup.marks[r][c];
+            for (int r = 0; r < students.length; r++) {
+                for (int c = 0; c < sessions.length; c++) {
+                    result += marks[r][c];
                 }
             }
-            return result / (aGroup.students.length * aGroup.sessions.length);
+            return result / (students.length * sessions.length);
         }
 
         public String bestStudent() {
@@ -71,4 +66,5 @@ public class Group {
             return null;
         }
     }
+    // INNER MEMBER CLASS
 }
