@@ -2,7 +2,7 @@ package practic.nested.classes;
 
 import java.util.Calendar;
 
-// Основной класс вокруг которого всё вертится
+
 public class Group {
     public String GroupId;
     public Calendar[] sessions;
@@ -40,6 +40,35 @@ public class Group {
                 System.out.printf("%10.2f", marks[r][c]);
             }
             System.out.println();
+        }
+    }
+
+    // Внутренний статический класс для подсчёта статистики
+    public static class Stats {
+        private Group aGroup;
+
+        public Stats(Group grp) {
+            aGroup = grp;
+        }
+
+        public double avgMark() {
+            double result = 0.0;
+            for (int r = 0; r < aGroup.students.length; r++) {
+                for (int c = 0; c < aGroup.sessions.length; c++) {
+                    result += aGroup.marks[r][c];
+                }
+            }
+            return result / (aGroup.students.length * aGroup.sessions.length);
+        }
+
+        public String bestStudent() {
+            // analysis
+            return "";
+        }
+
+        public String[] studentsAtRisk() {
+            // analysis
+            return null;
         }
     }
 }
